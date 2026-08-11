@@ -434,9 +434,9 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "You do not have permission to use this command.",
-    cooldownActive: "Please wait {time} before using this command again.",
-    errorOccurred: "An error occurred while executing this command.",
+    noPermission: "Must be a higher rank! maybe talk some more?",
+    cooldownActive: "Hold your horses! You have {time} until you can use this command again.",
+    errorOccurred: "ERROR_SYSTEM_SELF_DESTRUCT",
     missingPermissions:
       "I am missing required permissions to perform this action.",
     commandDisabled: "This command has been disabled.",
