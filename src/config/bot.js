@@ -39,7 +39,7 @@ export const botConfig = {
     owners: process.env.OWNER_IDS?.split(",").map((id) => id.trim()).filter(Boolean) || [],
 
     // Default wait time between command uses (in seconds).
-    defaultCooldown: 3,
+    defaultCooldown: 1,
 
     // If true, old commands are removed before re-registering.
     deleteCommands: false,
@@ -74,7 +74,7 @@ export const botConfig = {
     },
 
     // How long users must wait before submitting another application (hours).
-    applicationCooldown: 24,
+    applicationCooldown: 0.5,
 
     // Auto-delete denied applications after this many days.
     deleteDeniedAfter: 7,
@@ -187,10 +187,10 @@ export const botConfig = {
 
     // Command cooldowns (milliseconds).
     cooldowns: {
-      daily: 1 * 1 * 1 * 1,
-      work: 1 * 1 * 1,
-      crime: 1 * 1 * 1 * 1,
-      rob: 1 * 1 * 1 * 1,
+      daily: 0 * 0 * 0 * 0,
+      work: 0 * 0 * 0,
+      crime: 0 * 0 * 0 * 0,
+      rob: 0 * 0 * 0 * 0,
     },
 
     // Chance to succeed when robbing (0.4 = 40%).
@@ -255,7 +255,7 @@ export const botConfig = {
     archiveCategory: null,
 
     // Channel ID where ticket logs are sent.
-    logChannel: null,
+    logChannel: 1536238837511098442,
   },
 
   // =========================
@@ -291,7 +291,7 @@ export const botConfig = {
     defaultRole: null,
 
     // Channel ID where birthday announcements are posted.
-    announcementChannel: null,
+    announcementChannel: 1536124893035495504,
 
     // Timezone used to calculate birthday dates.
     timezone: "UTC",
