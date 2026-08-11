@@ -93,13 +93,13 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699",
-      secondary: "#2F3136",
+      primary: "#303030",
+      secondary: "#303030",
 
       // Standard status colors for success/error/warning/info messages.
       success: "#57F287",
-      error: "#ED4245",
-      warning: "#FEE75C",
+      error: "#8808080",
+      warning: "#ff0015",
       info: "#3498DB",
 
       // Neutral utility colors.
@@ -161,40 +161,40 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "Generalite",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "Generalites",
       // Currency symbol shown in balances.
       symbol: "$",
     },
 
     // Starting balance for new users.
-    startingBalance: 0,
+    startingBalance: 1000,
 
     // Maximum bank amount before upgrades (if upgrades are used).
     baseBankCapacity: 100000,
 
     // Daily reward amount.
-    dailyAmount: 100,
+    dailyAmount: 500,
 
     // Work command random payout range.
     workMin: 10,
     workMax: 100,
 
     // Beg command random payout range.
-    begMin: 5,
-    begMax: 50,
+    begMin: 100000,
+    begMax: 10000000000000,
 
     // Command cooldowns (milliseconds).
     cooldowns: {
-      daily: 24 * 60 * 60 * 1000,
-      work: 60 * 60 * 1000,
-      crime: 2 * 60 * 60 * 1000,
-      rob: 4 * 60 * 60 * 1000,
+      daily: 1 * 1 * 1 * 1,
+      work: 1 * 1 * 1,
+      crime: 1 * 1 * 1 * 1,
+      rob: 1 * 1 * 1 * 1,
     },
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    robSuccessRate: 0.9,
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 1 hour.
