@@ -172,7 +172,7 @@ export const botConfig = {
     startingBalance: 1000,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity: 100000,
+    baseBankCapacity: 100000000000000000000000000000000000000000000000000000000000000000000000,
 
     // Daily reward amount.
     dailyAmount: 500,
@@ -182,8 +182,8 @@ export const botConfig = {
     workMax: 100,
 
     // Beg command random payout range.
-    begMin: 100000,
-    begMax: 10000000000000,
+    begMin: 1,
+    begMax: 1000000000000000000000000000000000000000000000000000000000000000000,
 
     // Command cooldowns (milliseconds).
     cooldowns: {
@@ -194,7 +194,7 @@ export const botConfig = {
     },
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.9,
+    robSuccessRate: 1,
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 1 hour.
